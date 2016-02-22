@@ -1,0 +1,1 @@
+Please I have removed the Key and KeyRef elements from the XML Schema as it serves no useful purpose as we can refer any element from the schema instead of the intented element. Also I have not used the element nesting(hierarchical breakdown) as it creates redundancy. 

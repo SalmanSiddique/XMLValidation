@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE Library SYSTEM "library.dtd">
+
+<Library>
+
+<book ISBN="b1" writtenby="a1 a2" publishedby="b1">
+<title>First Title</title>
+<price>100</price>
+<year>2014</year>
+</book>
+<book ISBN="b2" writtenby="a1 a2" publishedby="p2">
+<title>Second Title</title>
+<price>200</price>
+<year>2014</year>
+</book>
+<book ISBN="b3" writtenby="a3" publishedby="p1">
+<title>Third Title</title>
+<price>00</price>
+<year>2014</year>
+</book>
+
+<author name="a1" bookswritten="b1 b2">
+<address>123 any add</address>
+<URL>abc1.com</URL>
+</author>
+<author name="a2" bookswritten="b2">
+<address>1234 any add</address>
+<URL>abc2.com</URL>
+</author>
+<author name="a3" bookswritten="b2 b3">
+<address>12345 any add</address>
+<URL>abc3.com</URL>
+</author>
+
+<publisher name="p1" bookspublished="b1 b3">
+<address>1 pub address</address>
+<phone>1234567890</phone>
+<URL>pub1.com</URL>
+</publisher>
+<publisher name="p2" bookspublished="b2">
+<address>2 pub address</address>
+<phone>9876543210</phone>
+<URL>pub2.com</URL>
+</publisher>
+</Library>

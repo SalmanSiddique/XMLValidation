@@ -1,0 +1,13 @@
+<!ELEMENT Library (book+, author+, publisher+)>
+<!ELEMENT book (title, price, year)>
+<!ATTLIST book ISBN ID #REQUIRED writtenby IDREFS #IMPLIED publishedby IDREF #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT author (address, URL)>
+<!ATTLIST author name ID #REQUIRED bookswritten IDREFS #IMPLIED>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT URL (#PCDATA)>
+<!ELEMENT publisher (address, phone, URL)>
+<!ATTLIST publisher name ID #REQUIRED bookspublished IDREFS #IMPLIED>
+<!ELEMENT phone (#PCDATA)>

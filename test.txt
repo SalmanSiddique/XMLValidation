@@ -1,0 +1,43 @@
+<xsd:key name='ISBN'>
+<xsd:selector xpath="Library/book"/>
+<xsd:field xpath="@ISBN"/>
+</xsd:key>
+
+<xsd:key name='authorname'>
+<xsd:selector xpath="Library/author"/>
+<xsd:field xpath="@authorname"/>
+</xsd:key>
+
+<xsd:key name='publishername'>
+<xsd:selector xpath="Library/publisher"/>
+<xsd:field xpath="@publishername"/>
+</xsd:key>
+
+  <xsd:key name="bookid">
+    <xsd:selector xpath="book"/>
+    <xsd:field xpath="@id"/>
+  </xsd:key>
+
+  <xsd:key name="authorid">
+    <xsd:selector xpath="author"/>
+    <xsd:field xpath="@"/>
+  </xsd:key>
+
+  <xsd:key name="bookid">
+    <xsd:selector xpath="book"/>
+    <xsd:field xpath="@id"/>
+  </xsd:key>
+
+  <xsd:keyref name="bookspublished" refer="bookid">
+    <xsd:selector xpath="publisher"/>
+    <xsd:field xpath="@bookspublished"/>
+  </xsd:keyref>
+  
+  
+
+  <xsd:element name='ISBN' type='xsd:string'>
+    <xsd:key name='ISBN'>
+      <xsd:selector xpath='Library/book'/>
+      <xsd:field xpath='@bookisbn'/>
+    </xsd:key> 
+  </xsd:element>
